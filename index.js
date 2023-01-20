@@ -1,8 +1,8 @@
 let num = 0;
 
 function generateRandomNumber() {
-  let randomNum = Math.floor(Math.random() * 1000)
-  return(randomNum)
+  let answer = Math.floor(Math.random() * 1000)
+  return(answer)
 }
 
 function differenceFromAnswer(guess,answer) {
@@ -15,4 +15,8 @@ function differenceFromAnswer(guess,answer) {
   }
 }
 
-generateRandomNumber()
+function makeAGuess() {
+  let guess = prompt("guess a number between 0-1000")
+  answer = generateRandomNumber()
+  return (guess,answer)
+}
